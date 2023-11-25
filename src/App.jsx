@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom"
 
 import NavbarComponent from "./component/Navbar"
 import FooterComponent from "./component/Footer"
-import FaqComponent from "./component/FaqComponent"
 
 import HomePages from "./pages/HomePages"
 import Berita from "./pages/Berita"
