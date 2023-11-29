@@ -1,7 +1,19 @@
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaberita } from "../data/index"
 
 const Berita = () => {
+
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const handleSearch = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+    const filteredBerita = semuaberita.filter((hangat) =>
+        hangat.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
         <div className="beritapage">
             <div className="berita-hangat min-vh-100">
@@ -13,7 +25,18 @@ const Berita = () => {
                         </Col>
                     </Row>
                     <Row>
-                        {semuaberita.map((hangat) => {
+                        <Col>
+                            <input
+                                type="text"
+                                placeholder="Cari berita..."
+                                value={searchTerm}
+                                onChange={handleSearch}
+                                className="form-control mb-4"
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        {filteredBerita.map((hangat) => {
                             return <Col className="shadow-sm" key={hangat.id}>
                                 <img src={hangat.imagehangat} alt="unsplash.com" className="w-100 mb-5 rounded-top" />
                                 <div className="star mb-2 px-3">
