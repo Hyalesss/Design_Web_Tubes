@@ -1,28 +1,26 @@
-import { Routes, Route } from "react-router-dom"
-
-import NavbarComponent from "./component/Navbar"
-import FooterComponent from "./component/Footer"
-
-import HomePages from "./pages/HomePages"
-import Berita from "./pages/Berita"
-import BeritaVideo from "./pages/VideoBerita"
-import FaqBerita from "./pages/FaqBerita"
+import { Routes, Route } from "react-router-dom";
+import FooterComponent from "./component/Footer";
+import HomePages from "./pages/HomePages";
+import Berita from "./pages/Berita";
+import BeritaVideo from "./pages/VideoBerita";
+import FaqBerita from "./pages/FaqBerita";
+import NavbarComponent from "./component/Navbar";
 
 function App() {
   return (
     <div>
-      <NavbarComponent/>
+      <NavbarComponent />
 
       <Routes>
-        <Route path="/" Component={HomePages} />
-        <Route path="/berita" Component={Berita} />
-        <Route path="/VideoBerita" Component={BeritaVideo} />
-        <Route path="/Faq" Component={FaqBerita} />
+        <Route path="/" element={<HomePages />} />
+        <Route path="/berita" element={<Berita />} />
+        <Route path="/VideoBerita" element={<BeritaVideo />} />
+        <Route path="/Faq" element={<FaqBerita />} />
       </Routes>
 
-      <FooterComponent/>
+      <FooterComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
