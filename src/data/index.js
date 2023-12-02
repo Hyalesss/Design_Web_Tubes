@@ -1,12 +1,12 @@
-import BeritaImage1 from "../assets/img/kelas/kelas-1.jpg";
+import BeritaImage1 from "../assets/img/kelas/kelas-1.jpeg";
 import BeritaImage2 from "../assets/img/kelas/kelas-2.jpg";
 import BeritaImage3 from "../assets/img/kelas/kelas-3.jpg";
 import BeritaImage4 from "../assets/img/kelas/kelas-4.jpg";
 import BeritaImage5 from "../assets/img/kelas/kelas-5.jpg";
 import BeritaImage6 from "../assets/img/kelas/kelas-6.jpg";
-import BeritaImage7 from "../assets/img/kelas/kelas-6.jpg";
-import BeritaImage8 from "../assets/img/kelas/kelas-6.jpg";
-import BeritaImage9 from "../assets/img/kelas/kelas-6.jpg";
+import BeritaImage7 from "../assets/img/kelas/kelas-7.jpg";
+import BeritaImage8 from "../assets/img/kelas/kelas-8.jpg";
+import BeritaImage9 from "../assets/img/kelas/kelas-9.jpeg";
 
 import teco1 from "../assets/img/video_viral/teco1.jpg";
 import teco2 from "../assets/img/video_viral/teco2.jpg";
@@ -47,7 +47,7 @@ export const semuaberita = [
     star3: "fa-solid fa-star",
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
-    title: "Mahasiswa ITK Berhasil Menjuarai Gemastik Nasional 2023",
+    title: "Mahasiswa ITS Berhasil Menjuarai Gemastik Nasional 2023",
     price: "Ahmad Taufik | Desember 2023",
     buy: "Lihat Berita",
     delay: "",
@@ -87,7 +87,7 @@ export const semuaberita = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star",
     title:
-      "VIRAL!! Mahasiswa ITK Melakukan Experiment Hantam Batok Kelapa Menggunakan Kepala",
+      "VIRAL!! Mahasiswa ITK Melakukan Demo Didepan Gedung Rektorat",
     price: "Fahri Dwi Hariyadi | Maret 2023",
     buy: "Lihat Berita",
     delay: "",

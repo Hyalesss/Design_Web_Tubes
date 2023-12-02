@@ -28,7 +28,7 @@ const NavbarComponent = () => {
                 <Container>
                     <div className="d-flex align-items-center">
                         <img src="./gotnews.png" className="pe-2" alt="GOT NEWS Logo" />
-                        <Navbar.Brand href="#home">GOT NEWS</Navbar.Brand>
+                        <Navbar.Brand href="">GOT NEWS</Navbar.Brand>
                     </div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
