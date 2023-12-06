@@ -5,6 +5,7 @@ import Berita from "./pages/Berita";
 import BeritaVideo from "./pages/VideoBerita";
 import FaqBerita from "./pages/FaqBerita";
 import NavbarComponent from "./component/Navbar";
+import DetailBerita from "./pages/detailberita"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/berita" element={<Berita />} />
         <Route path="/VideoBerita" element={<BeritaVideo />} />
         <Route path="/Faq" element={<FaqBerita />} />
+        <Route path="/DetailBerita" element={<DetailBerita/>} />
       </Routes>
 
       <FooterComponent />

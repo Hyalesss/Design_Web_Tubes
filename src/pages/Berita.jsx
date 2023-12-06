@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import { semuaberita } from "../data/index"
 
 const Berita = () => {
@@ -49,7 +50,7 @@ const Berita = () => {
                                 <h5 className="mb-5 px-3">{hangat.title}</h5>
                                 <div className="ket d-flex justify-content-between align-items-center px-3 pb-3">
                                     <p className="m-0 text-secondary fw-bold">{hangat.price}</p>
-                                    <button className="btn btn-primary rounded-1">{hangat.buy}</button>
+                                    <Link to={`/DetailBerita`} className="btn btn-primary rounded-1">Lihat Detail</Link>
                                 </div>
                             </Col>
                         })}
