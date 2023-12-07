@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import HeroImage from "../assets/Heroimage.png";
 
-import { beritahangat , dataSwiper} from '../data/index'
+import { beritahangat, dataSwiper } from '../data/index'
 import { useNavigate } from "react-router-dom"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -17,8 +17,14 @@ import { Pagination } from 'swiper/modules';
 
 const HomePages = () => {
 
-
   let navigate = useNavigate();
+
+  const handleScrollToBeritahangat = () => {
+    const beritahangat = document.getElementsByClassName("berita-hangat")[0];
+    if (beritahangat) {
+      beritahangat.scrollIntoView({ behavior: "smooth" });
+    }
+  };  
 
   return (
     <div className="homepage">
@@ -32,7 +38,7 @@ const HomePages = () => {
               <p className="mb-4">
                 Selalu terhubung dengan kejadian terkini di seluruh dunia melalui platform berita kami yang inovatif. Dari berita global hingga perkembangan lokal yang signifikan, kami menyajikan informasi terkini dengan kecepatan dan ketepatan tinggi. Dengan tim jurnalis profesional kami yang berdedikasi
               </p>
-              <button className="btn btn-primary btn-lg rounded-1">
+              <button className="btn btn-primary btn-lg rounded-1" onClick={handleScrollToBeritahangat}>
                 Lihat Berita
               </button>
             </Col>
@@ -64,7 +70,7 @@ const HomePages = () => {
                 <h5 className="mb-5 px-3">{hangat.title}</h5>
                 <div className="ket d-flex justify-content-between align-items-center px-3 pb-3">
                   <p className="m-0 text-secondary fw-bold">{hangat.price}</p>
-                  <button className="btn btn-primary rounded-1">{hangat.buy}</button>
+                  <button onClick={() => navigate("/berita")} className="btn btn-primary rounded-1">{hangat.buy}</button>
                 </div>
               </Col>
             })}
@@ -114,7 +120,7 @@ const HomePages = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {dataSwiper.map((dataswip)=> {
+              {dataSwiper.map((dataswip) => {
                 return <SwiperSlide key={dataswip.id} className="shadow-sm">
                   <p className="desc">{dataswip.desc}</p>
                   <div className="people">
@@ -132,7 +138,7 @@ const HomePages = () => {
       </div>
 
       <div>
-        <FaqComponent/>
+        <FaqComponent />
       </div>
 
     </div>

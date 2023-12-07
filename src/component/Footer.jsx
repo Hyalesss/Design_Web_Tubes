@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-
         <div className="footer py-5">
-
             <div id="footer" className="footer py-5">
                 <Container>
                     <Row className="d-flex justify-content-between">
